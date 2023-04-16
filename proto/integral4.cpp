@@ -11,14 +11,20 @@ double funcao(double x){
                           // X² + 3X, pensando em no futuro talvez fazer um parser simples de func. matemáticas
 }
 
+double func_teste(double x){
+    return x * x * sin(x/2);
+}
+
 int main(){
     double integralOld = 0; double integral = 0;
-    double erro_desejado = 0.00001;
-    double erro = 2;
+    //double erro_desejado = 0.00001;
+    double erro_desejado = 0.01;
+    double erro = 1;
     int N = 1;
     double intervalSize;
 
-    double xI = -18; double xF = 190;
+    //double xI = -18; double xF = 190;
+    double xI = 0; double xF = 4;
     double a; double b;
     int contador = 0;
 
@@ -46,6 +52,6 @@ int main(){
         integralOld = integral;
     }
     cout << erro << " < " << erro_desejado << " numero de iterações: " << contador << endl;
-    cout << integral << endl;
+    cout << "resultado: " << integral << endl;
     return 0; // Aparentemente funcionando direitinho
 }
