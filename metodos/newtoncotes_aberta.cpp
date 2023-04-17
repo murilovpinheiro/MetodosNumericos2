@@ -144,7 +144,7 @@ double aberta3(function<double(double)> f, double A, double B, double erro_desej
 
 
 //aberta 3 utilizando a filosofia central
-double aberta3(function<double(double)> f, double A, double B, double erro_desejado) {
+double aberta4(function<double(double)> f, double A, double B, double erro_desejado) {
     //integrar a função <function> entre A e B
     double erro_atual = 10000;
     //quantidade <N> de subproblemas
