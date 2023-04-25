@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDerivadas.a CMakeFiles/Derivadas.dir/derivadaPrimeira.cpp.o CMakeFiles/Derivadas.dir/derivadaSegunda.cpp.o CMakeFiles/Derivadas.dir/derivadaTerceira.cpp.o
+/usr/bin/ranlib libDerivadas.a

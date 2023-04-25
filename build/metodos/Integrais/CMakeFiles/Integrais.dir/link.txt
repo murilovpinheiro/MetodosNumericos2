@@ -1,0 +1,2 @@
+/usr/bin/ar qc libIntegrais.a CMakeFiles/Integrais.dir/gausslegendre.cpp.o CMakeFiles/Integrais.dir/newtoncotes_aberta.cpp.o CMakeFiles/Integrais.dir/newtoncotes_fechada.cpp.o
+/usr/bin/ranlib libIntegrais.a
