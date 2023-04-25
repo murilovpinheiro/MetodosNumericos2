@@ -1,2 +1,0 @@
-/usr/bin/ar qc libClasses.a CMakeFiles/Classes.dir/derivadaPrimeira.cpp.o CMakeFiles/Classes.dir/derivadaSegunda.cpp.o CMakeFiles/Classes.dir/derivadaTerceira.cpp.o
-/usr/bin/ranlib libClasses.a

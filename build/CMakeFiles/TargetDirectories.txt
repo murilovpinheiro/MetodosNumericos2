@@ -1,6 +1,0 @@
-/home/merilim/Documentos/C++/CRETO/build/CMakeFiles/main.dir
-/home/merilim/Documentos/C++/CRETO/build/CMakeFiles/edit_cache.dir
-/home/merilim/Documentos/C++/CRETO/build/CMakeFiles/rebuild_cache.dir
-/home/merilim/Documentos/C++/CRETO/build/Classes/CMakeFiles/Classes.dir
-/home/merilim/Documentos/C++/CRETO/build/Classes/CMakeFiles/edit_cache.dir
-/home/merilim/Documentos/C++/CRETO/build/Classes/CMakeFiles/rebuild_cache.dir

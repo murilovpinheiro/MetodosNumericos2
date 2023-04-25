@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/main.dir/mainteste.cpp.o -o main  Classes/libClasses.a 
