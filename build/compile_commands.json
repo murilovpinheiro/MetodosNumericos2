@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/merilim/Documentos/C++/CRETO/build",
+  "command": "/usr/bin/c++  -I/home/merilim/Documentos/C++/CRETO/metodos/Derivadas/Classes -g -o CMakeFiles/main.dir/mainteste.cpp.o -c /home/merilim/Documentos/C++/CRETO/metodos/Derivadas/mainteste.cpp",
+  "file": "/home/merilim/Documentos/C++/CRETO/metodos/Derivadas/mainteste.cpp"
+},
+{
+  "directory": "/home/merilim/Documentos/C++/CRETO/build/Classes",
+  "command": "/usr/bin/c++  -I/home/merilim/Documentos/C++/CRETO/metodos/Derivadas/Classes -g -o CMakeFiles/Classes.dir/derivadaPrimeira.cpp.o -c /home/merilim/Documentos/C++/CRETO/metodos/Derivadas/Classes/derivadaPrimeira.cpp",
+  "file": "/home/merilim/Documentos/C++/CRETO/metodos/Derivadas/Classes/derivadaPrimeira.cpp"
+},
+{
+  "directory": "/home/merilim/Documentos/C++/CRETO/build/Classes",
+  "command": "/usr/bin/c++  -I/home/merilim/Documentos/C++/CRETO/metodos/Derivadas/Classes -g -o CMakeFiles/Classes.dir/derivadaSegunda.cpp.o -c /home/merilim/Documentos/C++/CRETO/metodos/Derivadas/Classes/derivadaSegunda.cpp",
+  "file": "/home/merilim/Documentos/C++/CRETO/metodos/Derivadas/Classes/derivadaSegunda.cpp"
+},
+{
+  "directory": "/home/merilim/Documentos/C++/CRETO/build/Classes",
+  "command": "/usr/bin/c++  -I/home/merilim/Documentos/C++/CRETO/metodos/Derivadas/Classes -g -o CMakeFiles/Classes.dir/derivadaTerceira.cpp.o -c /home/merilim/Documentos/C++/CRETO/metodos/Derivadas/Classes/derivadaTerceira.cpp",
+  "file": "/home/merilim/Documentos/C++/CRETO/metodos/Derivadas/Classes/derivadaTerceira.cpp"
+}
+]

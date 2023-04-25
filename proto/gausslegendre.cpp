@@ -55,9 +55,9 @@ double doisPontos(function<double(double)> f, double A, double B, double erro_de
                 somatorio += 0.5*(xf - xi)*f(alfaParaX(alfaGrau2[i], xi, xf)) * pesosGrau2[i];
             }
             soma += somatorio;
-            itersGrau2 += 1;
+            
         }
-
+        itersGrau2 += 1;
         //calcular o erro relativo, para sair do <while>.
         erro_atual = abs((soma - soma_antiga)/soma);
         soma_antiga = soma;
@@ -96,8 +96,9 @@ double tresPontos(function<double(double)> f, double A, double B, double erro_de
                 somatorio +=  0.5*(xf - xi)*f(alfaParaX(alfaGrau3[i], xi, xf)) * pesosGrau3[i];
             }
             soma += somatorio;
-            itersGrau3 += 1;
+            
         }
+        itersGrau3 += 1;
 
         //calcular o erro relativo, para sair do <while>.
         erro_atual = abs((soma - soma_antiga)/soma);
@@ -137,9 +138,8 @@ double quatroPontos(function<double(double)> f, double A, double B, double erro_
                 somatorio +=  0.5*(xf - xi)*f(alfaParaX(alfaGrau4[i], xi, xf)) * pesosGrau4[i];
             }
             soma += somatorio;
-            itersGrau4 += 1;
         }
-
+        itersGrau4 += 1;
         //calcular o erro relativo, para sair do <while>.
         erro_atual = abs((soma - soma_antiga)/soma);
         soma_antiga = soma;

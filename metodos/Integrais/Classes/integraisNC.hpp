@@ -57,4 +57,4 @@ double Grau3(double erro_desejado) override;
 double Grau4(double erro_desejado) override;
 }; 
 
-#endif // DERIVADAS_HPP
+#endif
