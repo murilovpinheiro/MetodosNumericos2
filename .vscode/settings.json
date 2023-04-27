@@ -6,5 +6,6 @@
         "cmath": "cpp",
         "ostream": "cpp"
     },
-    "cmake.sourceDirectory": "/home/merilim/Documentos/C++/CRETO/metodos/Derivadas"
+    "cmake.sourceDirectory": "/home/merilim/Documentos/C++/CRETO/metodos/Derivadas",
+    "C_Cpp.errorSquiggles": "disabled"
 }

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Main"
+			"path" : "main"
 		}
 	],
 	"backtrace" : 1,
@@ -11,7 +11,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -25,13 +26,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 13,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -39,6 +52,17 @@
 	"compileGroups" : 
 	[
 		{
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/merilim/Documentos/C++/CRETO/metodos/Derivadas"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/merilim/Documentos/C++/CRETO/metodos/Integrais"
+				}
+			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
@@ -57,7 +81,7 @@
 			"id" : "Integrais::@c8d4ecf5ecd6a73df18e"
 		}
 	],
-	"id" : "Main::@6890427a1f51a3e7e1df",
+	"id" : "main::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +103,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Main",
-	"nameOnDisk" : "Main",
+	"name" : "main",
+	"nameOnDisk" : "main",
 	"paths" : 
 	{
 		"build" : ".",

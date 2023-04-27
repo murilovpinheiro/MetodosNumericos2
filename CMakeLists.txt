@@ -6,6 +6,10 @@ project(MeuProjeto)
 add_subdirectory(metodos/Derivadas)
 add_subdirectory(metodos/Integrais)
 
+
+include_directories(${CMAKE_SOURCE_DIR}/metodos/Derivadas)
+
+include_directories(${CMAKE_SOURCE_DIR}/metodos/Integrais)
 # Adiciona o executável principal
 add_executable(Main main.cpp)
 

@@ -1,4 +1,4 @@
-/home/merilim/Documentos/C++/CRETO/build/CMakeFiles/Main.dir
+/home/merilim/Documentos/C++/CRETO/build/CMakeFiles/main.dir
 /home/merilim/Documentos/C++/CRETO/build/CMakeFiles/edit_cache.dir
 /home/merilim/Documentos/C++/CRETO/build/CMakeFiles/rebuild_cache.dir
 /home/merilim/Documentos/C++/CRETO/build/metodos/Derivadas/CMakeFiles/Derivadas.dir

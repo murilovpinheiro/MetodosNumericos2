@@ -1,6 +1,5 @@
 #ifndef INTEGRAISNC_HPP
 #define INTEGRAISNC_HPP
-#include <functional>
 
 class NewtonCotes{
 

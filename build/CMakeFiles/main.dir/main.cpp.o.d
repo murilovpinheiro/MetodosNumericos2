@@ -1,4 +1,4 @@
-CMakeFiles/Main.dir/main.cpp.o: \
+CMakeFiles/main.dir/main.cpp.o: \
  /home/merilim/Documentos/C++/CRETO/main.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -192,7 +192,4 @@ CMakeFiles/Main.dir/main.cpp.o: \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /home/merilim/Documentos/C++/CRETO/metodos/Derivadas/derivadas.hpp \
  /home/merilim/Documentos/C++/CRETO/metodos/Integrais/integraisGL.hpp \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h \
  /home/merilim/Documentos/C++/CRETO/metodos/Integrais/integraisNC.hpp
