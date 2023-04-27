@@ -1,10 +1,7 @@
 #ifndef INTEGRAISGL_HPP
 #define INTEGRAISGL_HPP
-#include <map>
-#include <tuple>
 #include <vector>
 #include <functional>
-
 
 using namespace std;
 

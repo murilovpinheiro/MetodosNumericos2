@@ -11,7 +11,7 @@ include_directories(${CMAKE_SOURCE_DIR}/metodos/Derivadas)
 
 include_directories(${CMAKE_SOURCE_DIR}/metodos/Integrais)
 # Adiciona o executável principal
-add_executable(Main main.cpp)
+add_executable(main main.cpp)
 
 # Vincula os subdiretórios ao executável principal
-target_link_libraries(Main Derivadas Integrais)
+target_link_libraries(main Derivadas Integrais)

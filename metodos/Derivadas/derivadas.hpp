@@ -1,6 +1,8 @@
 #ifndef DERIVADAS_HPP
 #define DERIVADAS_HPP
 
+#include <functional>
+
 class Derivada{
 protected:
     std::function<double(double)> f;
