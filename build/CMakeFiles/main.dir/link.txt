@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/main.dir/main.cpp.o -o main  metodos/Derivadas/libDerivadas.a metodos/Integrais/libIntegrais.a 
