@@ -3,11 +3,12 @@
 #include "./integraisGC.hpp"
 
 using namespace std;
-// tá muito errado não tenho ctz de como funciona
-double GaussCheb::alfaParaX(double alfa, double xi, double xf){
-    return alfa;
-}
 
+
+double GaussCheb::alfaParaX(double alfa, double xi, double xf){
+    cout << alfa<<endl;
+    return  cos(((alfa - 0.5) * pi)/4);
+}
 
 double GaussCheb::resolve(double erro_desejado, int nop /*number of points*/) {
     //integrar a função <function> entre A e B
@@ -23,22 +24,29 @@ double GaussCheb::resolve(double erro_desejado, int nop /*number of points*/) {
     double soma_antiga = 0;
 
     int itersGrau2 = 0;
+
+    while(erro_atual > erro_desejado) {
+        N = N*2; //refinar as subdivisões
+        delta_x = (B - A) / N;
         soma = 0;
+
         //trabalhar nos subproblemas
-            double xi = A ; 
+        int K = 0;
+            double xi = A + delta_x * K; 
             double xf = B; 
             double somatorio = 0;
             
-            //Gauss Legendre, dois pontos
+            //Tá errado não sei oq fazer
             for (int i = 0; i < nop; i++) {
-                cout << f(alfas.at(nop - 2).at(i)) << " " << pesos.at(nop-2).at(i)<<endl;
-                somatorio += f(alfaParaX(alfas.at(nop - 2).at(i), xi, xf)) * pesos.at(nop - 2).at(i);
+                somatorio += 0.5*(xf - xi)*f(alfaParaX(alfas.at(nop - 2).at(i), xi, xf)) * pesos.at(nop - 2).at(i);
+                //cout << "0.5 * (" << xf<< " - " << xi << ") * f(" <<  alfaParaX(alfas.at(nop - 2).at(i), xi, xf) << ") * " << pesos.at(nop - 2).at(i) << "\n";
             }
             soma += somatorio;
         itersGrau2 += 1;
         //calcular o erro relativo, para sair do <while>.
         erro_atual = abs((soma - soma_antiga)/soma);
         soma_antiga = soma;
+    }
     cout << "Numero de Iterações: "<<itersGrau2 << endl;
     return soma;
 }

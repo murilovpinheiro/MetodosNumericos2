@@ -4,8 +4,11 @@
         "iostream": "cpp",
         "functional": "cpp",
         "cmath": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "complex": "cpp",
+        "array": "cpp",
+        "string_view": "cpp"
     },
-    "cmake.sourceDirectory": "/home/merilim/Documentos/C++/CRETO/metodos/Derivadas",
+    "cmake.sourceDirectory": "/home/merilim/Documentos/C++/CRETO/",
     "C_Cpp.errorSquiggles": "disabled"
 }

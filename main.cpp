@@ -5,7 +5,6 @@
 #include <integraisNC.hpp>
 #include <integraisGL.hpp>
 #include <integraisGC.hpp>
-
 using namespace std;
 
 void derivada(){
@@ -54,12 +53,12 @@ void integral(){
     cout << "O resultado da integral de f(x) = x^2 no intervalo [0, 1] é: " << resultado << endl;
   }
   if(option == 3){
-    auto f = [](double x) { return ((x*x*x + 32 *x - pow(2.13,x))/(sqrt(1 - x*x)));};
+    auto f = [](double x) { return (pow(2.71, x))/(sqrt(1 - x * x));};
     GaussCheb gl(f, -1, 1);
 
     double resultado = gl.resolve(1e-6, nop);
 
-    cout << "O resultado da integral de f(x) = x^2 no intervalo [0, 1] é: " << resultado << endl;
+    cout << "O resultado da integral de f(x) = x^2 no intervalo [-1, 1] é: " << resultado << endl;
   }
 
 }
