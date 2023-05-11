@@ -23,9 +23,7 @@ GaussLegendre(std::function<double(double)> op, double Xi, double Xf) : f(op), A
 virtual ~GaussLegendre() {}
 
 double alfaParaX(double alfa, double xi, double xf);
-double doisPontos(double erro_desejado, int nop);
-double tresPontos(double erro_desejado);
-double quatroPontos(double erro_desejado);
+double resolve(double erro_desejado, int nop);
 
 };
 

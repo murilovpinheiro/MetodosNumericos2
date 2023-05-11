@@ -2,8 +2,9 @@
 #include <functional>
 #include <math.h>
 #include <derivadas.hpp>
-#include <integraisGL.hpp>
 #include <integraisNC.hpp>
+#include <integraisGL.hpp>
+#include <integraisGC.hpp>
 
 using namespace std;
 
@@ -40,6 +41,29 @@ void derivada(){
   }
 }
 
+void integral(){
+  int option, nop;
+  cout << "Digite o tipo de derivada que deseja obter e o número de pontos(2 a 4):\n1 - Newton-cotes\n2 - Gauss-Legendre\n3 - Gauss-Chebyshev\n";
+  cin >> option >> nop;
+  if (option == 2){
+    auto f = [](double x) { return (x) * (x) * (x) + 3 * x - cos(x); };
+    GaussLegendre gl(f, 0, 2);
+
+    double resultado = gl.resolve(1e-6, nop);
+
+    cout << "O resultado da integral de f(x) = x^2 no intervalo [0, 1] é: " << resultado << endl;
+  }
+  if(option == 3){
+    auto f = [](double x) { return ((x*x*x + 32 *x - pow(2.13,x))/(sqrt(1 - x*x)));};
+    GaussCheb gl(f, -1, 1);
+
+    double resultado = gl.resolve(1e-6, nop);
+
+    cout << "O resultado da integral de f(x) = x^2 no intervalo [0, 1] é: " << resultado << endl;
+  }
+
+}
+
 int main() {
   int option = 0;
   cout << "Prototipo do Programa de Metodos Numericos 2:\n\nAutores:\nMurilo Pinheiro\nNatan Maia" << endl << endl;
@@ -54,6 +78,7 @@ int main() {
       break;
     case 2:
       cout << "Voce escolheu Integral, agora escolha o que deseja:" << endl;
+      integral();
       break;
     default:
       cout << "Valor inválido." << endl << endl;
