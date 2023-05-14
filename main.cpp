@@ -5,7 +5,12 @@
 #include <integraisNC.hpp>
 #include <integraisGL.hpp>
 #include <integraisGC.hpp>
+#include <cmath>
+#include <vector>
 using namespace std;
+double f(double x) {
+    return  ((exp(x) + x * x * x)/(sqrt(1 - x * x)));
+}
 
 void derivada(){
   double x, delta, ordemErro;
@@ -53,7 +58,6 @@ void integral(){
     cout << "O resultado da integral de f(x) = x^2 no intervalo [0, 1] é: " << resultado << endl;
   }
   if(option == 3){
-    auto f = [](double x) { return (pow(2.71, x))/(sqrt(1 - x * x));};
     GaussCheb gl(f, -1, 1);
 
     double resultado = gl.resolve(1e-6, nop);
