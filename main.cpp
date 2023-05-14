@@ -5,11 +5,15 @@
 #include <integraisNC.hpp>
 #include <integraisGL.hpp>
 #include <integraisGC.hpp>
+#include <integraisGH.hpp>
+#include <integraisGG.hpp>
 #include <cmath>
 #include <vector>
+
 using namespace std;
+
 double f(double x) {
-    return  ((exp(x) + x * x * x)/(sqrt(1 - x * x)));
+    return  (sqrt(exp(x)));
 }
 
 void derivada(){
@@ -47,7 +51,7 @@ void derivada(){
 
 void integral(){
   int option, nop;
-  cout << "Digite o tipo de derivada que deseja obter e o número de pontos(2 a 4):\n1 - Newton-cotes\n2 - Gauss-Legendre\n3 - Gauss-Chebyshev\n";
+  cout << "Digite o tipo de derivada que deseja obter e o número de pontos(2 a 4):\n1 - Newton-cotes\n2 - Gauss-Legendre\n3 - Gauss-Chebyshev\n4 - Gauss-Hermite\n5 - Gauss-Laguerre\n";
   cin >> option >> nop;
   if (option == 2){
     auto f = [](double x) { return (x) * (x) * (x) + 3 * x - cos(x); };
@@ -58,12 +62,27 @@ void integral(){
     cout << "O resultado da integral de f(x) = x^2 no intervalo [0, 1] é: " << resultado << endl;
   }
   if(option == 3){
-    GaussCheb gl(f, -1, 1);
+    GaussCheb gl(f);
 
     double resultado = gl.resolve(1e-6, nop);
 
     cout << "O resultado da integral de f(x) = x^2 no intervalo [-1, 1] é: " << resultado << endl;
   }
+  if(option == 4){
+    GaussHerm gl(f);
+
+    double resultado = gl.resolve(1e-6, nop);
+
+    cout << "O resultado da integral de f(x) = x^2 no intervalo [-1, 1] é: " << resultado << endl;
+  }
+  if(option == 5){
+    GaussLaguerre gl(f);
+
+    double resultado = gl.resolve(1e-6, nop);
+
+    cout << "O resultado da integral de f(x) = x^2 no intervalo [-1, 1] é: " << resultado << endl;
+  }
+
 
 }
 
