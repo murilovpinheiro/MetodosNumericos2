@@ -2,7 +2,6 @@
 #define INTEGRAISGG_HPP
 #include <vector>
 #include <functional>
-#include <math.h>
 #include "constante.hpp"
 
 using namespace std;

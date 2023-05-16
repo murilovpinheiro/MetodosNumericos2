@@ -54,10 +54,16 @@ void integral(){
   cout << "Digite o tipo de derivada que deseja obter e o número de pontos(2 a 4):\n1 - Newton-cotes\n2 - Gauss-Legendre\n3 - Gauss-Chebyshev\n4 - Gauss-Hermite\n5 - Gauss-Laguerre\n";
   cin >> option >> nop;
   if (option == 2){
-    auto f = [](double x) { return (x) * (x) * (x) + 3 * x - cos(x); };
-    GaussLegendre gl(f, 0, 2);
+    auto fs = [](double s) { 
+      double x = ((-1+1)/2) + ((1 + 1)/2) * tanh((pi/2) * sinh(s));
+      return 1/(pow(x, (2/3))) * ((pi/2) * ((cosh(s))/(pow((cosh(pi/2 * sinh(s))), 2))));};
+    auto f = [](double s){
+      double x = ((0+2)/2) + ((2 - 0)/2) * tanh((pi/2) * sinh(s));
+      return 1/(pow(pow(x, 2), 1/3)) * 1/2 * (pi/2 * cosh(s)/pow((cosh(pi/2 * sinh(s))), 2));
+    };
+    GaussLegendre gl(f, -10, 10);
 
-    double resultado = gl.resolve(1e-6, nop);
+    double resultado = gl.resolve(1e-10, nop);
 
     cout << "O resultado da integral de f(x) = x^2 no intervalo [0, 1] é: " << resultado << endl;
   }
